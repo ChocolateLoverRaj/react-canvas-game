@@ -38,7 +38,6 @@ const Game = (props: GameProps) => {
       for(let i = 0; i < ticks; i++){
         props.tick()
       }
-      console.log(ticks)
       lastTick.current = now
       timer = setTimeout(tick, tickInterval - (Date.now() - now))
     }
